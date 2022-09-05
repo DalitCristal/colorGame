@@ -70,7 +70,6 @@ function generateRandomColors(numero) {
 reset.addEventListener ('click', function () {
     colors = generateRandomColors(numberOfSquares)
     pickedColor = pickColor(colors)
-    // span = document.querySelector('#colorDisplay')
     colorDisplay.textContent = pickedColor
     this.textContent = 'Nuevos Colores'
     message.textContent = ''
@@ -89,7 +88,6 @@ facil.addEventListener ('click', function () {
     numberOfSquares = 3
     colors = generateRandomColors(numberOfSquares)
     pickedColor = pickColor(colors)
-    // span.textContent = pickedColor
     h1.style.backgroundColor = ''
 
     colorDisplay.textContent = pickedColor
@@ -102,16 +100,6 @@ facil.addEventListener ('click', function () {
             el.style.display = "none";
         }
     });
-
-    // for (let i = 0; i < colors.length; i++) { 
-
-    //     cuadrados[i].style.backgroundColor = colors[i]
-
-    // }
-
-    // for (let i = 0; i < cuadrados.length; i++) {
-    //     cuadrados[i].style.backgroundColor = colors[i]
-    // }
 })
 
 /* HARD (DIFICIL) */
@@ -123,7 +111,6 @@ dificil.addEventListener ('click', function () {
     numberOfSquares = 6
     colors = generateRandomColors(numberOfSquares)
     pickedColor = pickColor(colors)
-    // span.textContent = pickedColor
     h1.style.backgroundColor = ''
 
     colorDisplay.textContent = pickedColor
@@ -136,8 +123,4 @@ dificil.addEventListener ('click', function () {
             el.style.display = "none";
         }
     });
-    // for (let i = 0; i < cuadrados.length; i++) {
-    //     cuadrados[i].style.backgroundColor = colors[i]
-    //     cuadrados[i].style.display = 'block'
-    // }
 })
