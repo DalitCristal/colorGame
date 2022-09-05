@@ -1,0 +1,88 @@
+:root {
+  --color-white: #FFFFFF;
+  --first-color: #D264B6;
+  --opacity-first-color: rgba(210, 100, 182, 0.75); 
+  --second-color: #381D2A;
+  --opacity-second-color: rgba(56, 29, 42, 0.75);
+  --third-color: #3E6990;
+  --opacity-third-color: rgba(62, 105, 144, 0.75);
+  --gray-color: #ccc;
+  --color-black: #000000;
+  --font: 'Raleway', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--second-color)  
+}
+
+.square {
+  float: left;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  background-color: var(--third-color);
+  margin: 5px;
+  border-radius: 10%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--color-white);
+  text-align: center;
+}
+
+#message{
+    color: var(--color-white);
+
+}
+
+#stripe{
+  background-color: var(--gray-color);
+  height: 35px;
+  text-align: center;
+}
+
+.selected{
+  background-color: var(--first-color);
+}
+
+#easyButton, #hardButton{
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: inline-block;
+  width: 80px;
+  font-family: var(--font);
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-black);
+  background-color: var(--opacity-first-color);
+}
+
+#reset {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: inline-block;
+  width: 120px;
+  font-family: var(--font);
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-black);
+  background-color: var(--opacity-first-color);
+}
